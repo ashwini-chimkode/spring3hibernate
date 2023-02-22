@@ -10,7 +10,7 @@ import org.openqa.selenium.Keys;
 public class GoogleTest {
 @Test
 public void login() {
-System.setProperty("webdriver.chrome.driver", "C:\Users\ashwini_chimkode\Downloads\chromedriver_win32\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 WebDriver driver=new ChromeDriver();
 driver.manage().window().maximize();
 driver.get("https://www.google.com/");
