@@ -8,6 +8,14 @@
 <!-- 	<properties>
     <jmeterThreads>1</jmeterThreads>
 </properties> -->
+	
+   <properties>
+<!-- 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    	<hamcrest.version>1.3</hamcrest.version>
+	<mockito.version>2.21.0</mockito.version> -->
+	<jacoco.plugin.version>0.8.1</jacoco.plugin.version>
+    </properties>
 
 	<scm>
 		<developerConnection>
