@@ -9,13 +9,13 @@
     <jmeterThreads>1</jmeterThreads>
 </properties> -->
 	
-   <properties>
+<!--    <properties>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     	<hamcrest.version>1.3</hamcrest.version>
 	<mockito.version>2.21.0</mockito.version>
 	<jacoco.plugin.version>0.8.1</jacoco.plugin.version>
-    </properties>
+    </properties> -->
 
 	<scm>
 		<developerConnection>
@@ -118,7 +118,7 @@
                 </dependency>
             </dependencies>
         </plugin>
-<!--         <plugin>
+        <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.7.9</version>
@@ -156,8 +156,8 @@
                     </configuration>
                 </execution>
             </executions>
-        </plugin> -->
-	<plugin>
+        </plugin>
+<!-- 	<plugin>
         <!-- Code coverage plugin. -->
         <!-- This sets up code coverage for the unit tests, the integration tests, -->
         <!-- and the combined coverage of both. -->
@@ -229,7 +229,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>	
+      </plugin>	 -->
 			
 <!--  <plugin>
                 <groupId>org.jacoco</groupId>
