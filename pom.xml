@@ -156,7 +156,7 @@
         <!-- After running a `mvn clean install`, open `target/site/jacoco-both/index.html` in a browser. -->
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${jacoco.plugin.version}</version>
+        <version>0.8.7</version>
         <executions>
           <execution>
             <id>jacoco-prepare-agent</id>
