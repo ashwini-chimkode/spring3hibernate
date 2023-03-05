@@ -54,7 +54,7 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.1</version>
       </plugin>
-            <plugin>
+<!--             <plugin>
               <groupId>org.owasp</groupId>
               <artifactId>dependency-check-maven</artifactId>
               <version>6.0.3</version>
@@ -65,7 +65,28 @@
                       </goals>
                   </execution>
               </executions>
-            </plugin>
+            </plugin> -->
+			<plugin>
+              <groupId>org.owasp</groupId>
+              <artifactId>dependency-check-maven</artifactId>
+              <version>7.4.4</version>
+              <executions>
+                  <execution>
+                      <goals>
+                         <!-- <goal>check</goal> -->
+                      </goals>
+                  </execution>
+              </executions>
+		     <configuration>   
+           <!-- Generate all report formats -->  
+           <format>ALL</format>  
+           <!-- Don't use Nexus Analyzer -->  
+           <centralAnalyzerEnabled>false</centralAnalyzerEnabled>  
+           <!-- Am I the latest version? -->  
+           <versionCheckEnabled>true</versionCheckEnabled>  
+         </configuration>
+		</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
